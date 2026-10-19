@@ -1,0 +1,48 @@
+
+/* Background setup, style and layout */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ce821e, #5f2f8e);
+    color: white;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* characteristics for buttons */
+.button {
+    padding: 15px 40px;
+    background: white;
+    color: #6831a0;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* carousel styling for initial hide */
+#wheel {
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+    gap: 0;
+}
+
+/* shows only once added by button */
+#wheel.show {
+    display: flex;
+}
+
+#wheel img {
+    max-width: 33vw;
+    height: 350px;
+    object-fit: cover;
+}
+
+#title.hide {
+    display: none;
+}
